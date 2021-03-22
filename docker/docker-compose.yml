@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - '8888:8888'
+    volumes:
+      # - '/mnt/c/Users/gutod/data_science/nishika-apa/nishika_apa:/work'
+      - '../nishika_apa:/work'
+    tty: true
+    stdin_open: true
